@@ -15,7 +15,7 @@ function DropDown({selected, setSelected,active,show}) {
       <div className="dropdown">
         <div className="heading">Device</div>
         <div className="dropdown-btn" onClick={(e) => setIsActive(!isActive)}>
-          {selected}
+          {!selected ? 'Choose one' : selected}
           <span className="fa fa-caret-down"></span>
         </div>
         {isActive && (
@@ -48,13 +48,19 @@ function DropDown({selected, setSelected,active,show}) {
             </div>
           </div>
         )}
+          <div className="dropdown">
+        <div className="heading">Version</div>
+        <div className="dropdown-btn">
+          <input type="text" value={selected} name="" id="" />
+        </div>
       </div>
-      <div className="dropdown">
+      </div>
+      {/* <div className="dropdown">
         <div className="heading">Version</div>
         <div className="dropdown-btn">
           <input type="text" name="" id="" />
         </div>
-      </div>
+      </div> */}
       <div className="dropdown">
         <div className="heading">File Upload</div>
         <div className="upload-btn">

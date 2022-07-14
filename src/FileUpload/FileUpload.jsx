@@ -8,6 +8,7 @@ import { useState } from 'react'
 const FileUpload = ({ files, setFiles, removeFile,cancel }) => {
     const [name,setName] = useState('')
     const uploadHandler = (event) => {
+      
         const file = event.target.files[0];
         if(!file) return;
         file.isUploading = true;
@@ -33,6 +34,7 @@ const FileUpload = ({ files, setFiles, removeFile,cancel }) => {
                 console.error(err)
                 removeFile(file.name)
             });
+        
     }
 
     return (
@@ -49,6 +51,17 @@ const FileUpload = ({ files, setFiles, removeFile,cancel }) => {
                         </i>
                         Upload
                     </button>
+                  
+                </div>
+                <div className="file-inputs">
+                    <input type="file" multiple  />
+                    <button>
+                        <i>
+                            <FontAwesomeIcon icon={faPlus} />
+                        </i>
+                        Download Bin File
+                    </button>
+                  
                 </div>
 
                 <p className="main">Supported files</p>

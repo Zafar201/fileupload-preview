@@ -7,7 +7,7 @@ import Navbar from './Navbar';
 
 function App() {
   const [files, setFiles] = useState([])
-  const [selected, setSelected] = useState("Choose One");
+  const [selected, setSelected] = useState('');
   const [active, setActive] = useState(false)
 
   const removeFile = (filename) => {
