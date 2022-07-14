@@ -66,6 +66,9 @@ function DropDown({selected, setSelected,active,show}) {
         <div className="upload-btn">
            <button onClick={show}>Upload button</button>
         </div>
+        <div className="upload-btn">
+           <button>Download Bin File</button>
+        </div>
       </div>
       <div className="dropdown">
         {/* <div className="heading" style={{ alignSelf: "start" }}>

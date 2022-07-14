@@ -53,16 +53,7 @@ const FileUpload = ({ files, setFiles, removeFile,cancel }) => {
                     </button>
                   
                 </div>
-                <div className="file-inputs">
-                    <input type="file" multiple  />
-                    <button>
-                        <i>
-                            <FontAwesomeIcon icon={faPlus} />
-                        </i>
-                        Download Bin File
-                    </button>
-                  
-                </div>
+             
 
                 <p className="main">Supported files</p>
                 {name && name.name}

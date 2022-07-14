@@ -233,8 +233,10 @@ body {
     cursor: pointer;
 }
 .upload-btn button{
-  padding: 13px;
-    border: none;
-    border-radius: 12px;
-    background: #0275d8;
+  padding: 11px;
+  border: none;
+  border-radius: 0px;
+  margin-left: 15px;
+  border-radius: 7px;
+  background: #0275d8;
 }
